@@ -1,0 +1,35 @@
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 32px;
+}
+
+.signup-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  color: #fff;
+}
+
+.login-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 500px;
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  transform: scale(1.04);
+}

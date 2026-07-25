@@ -1,0 +1,12 @@
+.screen-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.screen-placeholder h1 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
