@@ -1,6 +1,4 @@
-// A single component that returns the right SVG based on a "name" prop.
-// This is a common React pattern: instead of a separate file per icon,
-// one component + a switch keeps things easy to find and reuse.
+
 
 const paths = {
   home: 'M12 2 2 10h3v10h6v-6h2v6h6V10h3L12 2z',

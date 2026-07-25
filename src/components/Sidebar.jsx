@@ -2,10 +2,7 @@ import Icon from './Icon';
 import { navItems, libraryActions } from '../data/content';
 import './Sidebar.css';
 
-// "activeScreen" and "onNavigate" are PROPS passed down from App.jsx.
-// Sidebar itself holds no state - it just displays what it's told to,
-// and reports clicks back up to the parent. This is the standard React
-// pattern: state lives in one place (App), children are "controlled".
+
 export default function Sidebar({ activeScreen, onNavigate }) {
   return (
     <aside className="sidebar">

@@ -1,6 +1,4 @@
-// All the "stuff" that goes on cards lives here, separate from the components
-// that render it. This is what makes <Card /> reusable: it doesn't know or
-// care about Spotify, it just renders whatever object it's given.
+
 
 export const focusPlaylists = [
   {
