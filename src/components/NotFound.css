@@ -1,0 +1,21 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  gap: 16px;
+}
+
+.not-found h1 {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.not-found p {
+  color: #a7a7a7;
+  font-size: 18px;
+  margin: 0;
+}

@@ -1,5 +1,3 @@
-
-
 export const focusPlaylists = [
   {
     id: 'peaceful-piano',
@@ -66,15 +64,13 @@ export const spotifyPlaylists = [
   },
 ];
 
-// One place that describes every sidebar nav item. Sidebar.jsx just loops
-// over this array instead of having 5 hardcoded <li> elements.
 export const navItems = [
-  { id: 'home', label: 'Home', icon: 'home' },
-  { id: 'search', label: 'Search', icon: 'search' },
-  { id: 'library', label: 'Your Library', icon: 'library' },
+  { id: 'home', label: 'Home', icon: 'home', path: '/' },
+  { id: 'search', label: 'Search', icon: 'search', path: '/search' },
+  { id: 'library', label: 'Your Library', icon: 'library', path: '/library' },
 ];
 
 export const libraryActions = [
-  { id: 'create-playlist', label: 'Create Playlist', icon: 'plus' },
-  { id: 'liked-songs', label: 'Liked Songs', icon: 'heart' },
+  { id: 'create-playlist', label: 'Create Playlist', icon: 'plus', path: '/create-playlist' },
+  { id: 'liked-songs', label: 'Liked Songs', icon: 'heart', path: '/liked-songs' },
 ];

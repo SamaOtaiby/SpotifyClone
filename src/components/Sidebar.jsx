@@ -1,11 +1,12 @@
+import { NavLink } from 'react-router-dom';
 import Icon from './Icon';
 import { navItems, libraryActions } from '../data/content';
 import './Sidebar.css';
 
-
-export default function Sidebar({ activeScreen, onNavigate }) {
+export default function Sidebar() {
   return (
     <aside className="sidebar">
+
       <div className="sidebar-logo">
         <Icon name="logo" size={32} />
         <span>Spotify</span>
@@ -15,13 +16,15 @@ export default function Sidebar({ activeScreen, onNavigate }) {
         <ul>
           {navItems.map((item) => (
             <li key={item.id}>
-              <button
-                className={`sidebar-link ${activeScreen === item.id ? 'active' : ''}`}
-                onClick={() => onNavigate(item.id)}
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  `sidebar-link ${isActive ? 'active' : ''}`
+                }
               >
                 <Icon name={item.icon} />
                 <span>{item.label}</span>
-              </button>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -31,15 +34,17 @@ export default function Sidebar({ activeScreen, onNavigate }) {
         <ul>
           {libraryActions.map((item) => (
             <li key={item.id}>
-              <button
-                className={`sidebar-link ${activeScreen === item.id ? 'active' : ''}`}
-                onClick={() => onNavigate(item.id)}
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  `sidebar-link ${isActive ? 'active' : ''}`
+                }
               >
                 <span className="icon-badge">
                   <Icon name={item.icon} size={14} />
                 </span>
                 <span>{item.label}</span>
-              </button>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -58,6 +63,7 @@ export default function Sidebar({ activeScreen, onNavigate }) {
         </div>
         <button className="lang-button">🌐 English</button>
       </div>
+
     </aside>
   );
 }
